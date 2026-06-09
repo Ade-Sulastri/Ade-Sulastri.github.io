@@ -17,45 +17,46 @@
 <body enable-smooth-scroll="true">
 
   <!-- HERO SECTION -->
-  <section class="hero text-white d-flex bg-fixed">
-    <div class="container-md d-sm-flex align-self-center align-items-center grid gap-5 ">
-      <div class="hero-img d-flex justify-content-start overflow-hidden ">
-        <img src="assets/myPhoto2.png" class="rounded-circle">
-      </div>
-      <div class="hero-content grid col-sm-6">
-        <button type="button" class="btn btn-outline-light p-2 px-3  mb-1">Welcome to My Portfolio</button>
-        <h1 class="text-capitalize">ade sulastri</h1>
-        <p class="fw-lighter">Hi my name is Ade Sulastri I am a Five-semester student majoring in Computer Science in Universitas Halu Oleo
-          with a keen interest in web development and UI/UX. I have a strong desire to continue learning and enhancing
-          my skills, particularly in the field of web development.</p>
-          <button class="btn border"><a href="https://drive.google.com/file/d/1ICosqLOPk9Yg3DvcE-f-Vy1cnnzYdHeU/view?usp=sharing" class="text-white" target="_blank">Resume</a></button>
+  <section class="hero text-white d-flex align-items-center bg-fixed">
+    <div class="container-md">
+      <div class="row align-items-center flex-column-reverse flex-md-row gap-5 gap-md-0">
+        <div class="hero-content col-md-6 d-flex flex-column align-items-start text-center text-md-start">
+          <span
+            class="badge text-bg-light p-2 px-3 mb-3 fs-6 rounded-pill text-black align-self-center align-self-md-start">Welcome
+            to My Portfolio</span>
+          <h1 class="text-capitalize fw-bold display-4 mb-3 align-self-center align-self-md-start">Ade Sulastri</h1>
+          <p class="fw-light fs-5 mb-4" style="line-height: 1.6; color: #f0f0f0;">Hi my name is Ade Sulastri. I am an
+            8th-semester Computer Science student at Universitas Halu Oleo with a keen interest in web development and
+            UI/UX. I have a strong desire to continue learning and enhancing my skills, particularly in the field of web
+            development</p>
+          <div class="d-flex gap-3 align-self-center align-self-md-start">
+            <a href="https://drive.google.com/file/d/1ICosqLOPk9Yg3DvcE-f-Vy1cnnzYdHeU/view?usp=sharing"
+              class="btn btn-light px-4 py-2 rounded-pill fw-semibold text-black" target="_blank">Resume</a>
+            <a href="#projects" class="btn btn-outline-light px-4 py-2 rounded-pill fw-semibold">My Projects</a>
+          </div>
+        </div>
+        <div class="hero-img col-md-6 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
+          <div class="img-wrapper">
+            <img src="assets/photo-profile2.jpg" alt="Ade Sulastri">
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- NAVBAR -->
-  <nav class="nav text-white" id="navbarSticky">
-    <div class="container d-flex justify-content-between text-capitalize align-items-center">
-      <!-- <div class="navbar-brand">
-        <h1>photo</h1>
-      </div> -->
-      <div class="nav">
-        <a class="nav-link tex-black" href="#skills">skills</a>
-        <a class="nav-link tex-black" href="#projects">projects</a>
-      </div>
-    </div>
-  </nav>
-
   <!-- skills -->
-  <section data-bs-spy="scroll" data-bs-target="navbarSticky">
-    <div class="skills mt-5 pt-3" id="skills" style="height: 100vh;">
-      <div class="container">
-        <div class="icon pt-5 row gap-5 flex justify-content-center align-items-center">
-          <!-- html -->
-          <div id="skills" class="card rounded-4 border p-3 col-4 col-sm-3 col-md-3 col-lg-3 col-xl-2 ">
-            <div class="d-flex">
-              <h5>HTML</h5>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+  <section id="skills" class="skills py-5" data-bs-spy="scroll" data-bs-target="navbarSticky">
+    <div class="container py-5">
+      <div class="text-center mb-5">
+        <span class="badge text-bg-primary p-2 px-3 mb-2 rounded-pill shadow-sm">My Expertise</span>
+        <h2 class="display-5 fw-bold text-capitalize">Tech Stack & Tools</h2>
+      </div>
+      <div class="row gap-4 justify-content-center">
+        <!-- html -->
+        <div class="skill-card card border-0 rounded-4 p-4 col-5 col-sm-4 col-md-3 col-lg-2 shadow-sm">
+          <div class="d-flex flex-column align-items-center justify-content-center gap-3 h-100">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32">
                 <path fill="#e44f26" d="M5.902 27.201L3.655 2h24.69l-2.25 25.197L15.985 30L5.902 27.201z" />
                 <path fill="#f1662a" d="m16 27.858l8.17-2.265l1.922-21.532H16v23.797z" />
                 <path fill="#ebebeb"
@@ -64,13 +65,15 @@
                   d="M15.989 13.407v3.091h3.806l-.358 4.009l-3.448.93v3.216l6.337-1.757l.046-.522l.726-8.137l.076-.83h-7.185zm0-6.256v3.091h7.466l.062-.694l.141-1.567l.074-.83h-7.743z" />
               </svg>
             </div>
+            <h6 class="mb-0 fw-semibold text-black">HTML</h6>
           </div>
+        </div>
 
-          <!-- css -->
-          <div id="skills" class="card border rounded-4 p-3 col-sm-3 col-md-3 col-lg-3 col-xl-2 col-4">
-            <div class="d-flex">
-              <h5>CSS</h5>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+        <!-- css -->
+        <div class="skill-card card border-0 rounded-4 p-4 col-5 col-sm-4 col-md-3 col-lg-2 shadow-sm">
+          <div class="d-flex flex-column align-items-center justify-content-center gap-3 h-100">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32">
                 <path fill="#1572b6" d="M5.902 27.201L3.656 2h24.688l-2.249 25.197L15.985 30L5.902 27.201z" />
                 <path fill="#33a9dc" d="m16 27.858l8.17-2.265l1.922-21.532H16v23.797z" />
                 <path fill="#fff" d="M16 13.191h4.09l.282-3.165H16V6.935h7.75l-.074.829l-.759 8.518H16v-3.091z" />
@@ -82,24 +85,28 @@
                   d="M16.011 6.935v3.091H8.545l-.062-.695l-.141-1.567l-.074-.829h7.743zM16 13.191v3.091h-3.399l-.062-.695l-.14-1.567l-.074-.829H16z" />
               </svg>
             </div>
+            <h6 class="mb-0 fw-semibold text-black">CSS</h6>
           </div>
+        </div>
 
-          <!-- bootstrap -->
-          <div id="skills" class="card border rounded-4 p-3 col-sm-3 col-md-3 col-lg-3 col-xl-2 col-4">
-            <div class="d-flex gap-1">
-              <h6>Bootstrap</h6>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 204">
+        <!-- bootstrap -->
+        <div class="skill-card card border-0 rounded-4 p-4 col-5 col-sm-4 col-md-3 col-lg-2 shadow-sm">
+          <div class="d-flex flex-column align-items-center justify-content-center gap-3 h-100">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 204">
                 <path fill="#7E13F8"
                   d="M53.172 0C38.565 0 27.756 12.785 28.24 26.65c.465 13.32-.139 30.573-4.482 44.642C19.402 85.402 12.034 94.34 0 95.488v12.956c12.034 1.148 19.402 10.086 23.758 24.197c4.343 14.069 4.947 31.32 4.482 44.641c-.484 13.863 10.325 26.65 24.934 26.65h149.673c14.608 0 25.414-12.785 24.93-26.65c-.464-13.32.139-30.572 4.482-44.641c4.359-14.11 11.707-23.05 23.741-24.197V95.488c-12.034-1.148-19.382-10.086-23.74-24.196c-4.344-14.067-4.947-31.321-4.483-44.642C228.261 12.787 217.455 0 202.847 0H53.17h.002ZM173.56 125.533c0 19.092-14.24 30.67-37.872 30.67h-40.23a4.339 4.339 0 0 1-4.338-4.339V52.068a4.339 4.339 0 0 1 4.339-4.34h39.999c19.705 0 32.637 10.675 32.637 27.063c0 11.503-8.7 21.801-19.783 23.604v.601c15.089 1.655 25.248 12.104 25.248 26.537Zm-42.26-64.05h-22.937v32.4h19.32c14.934 0 23.17-6.014 23.17-16.764c0-10.073-7.082-15.636-19.552-15.636Zm-22.937 45.256v35.705h23.782c15.548 0 23.786-6.239 23.786-17.965c0-11.728-8.467-17.742-24.786-17.742h-22.782v.002Z" />
               </svg>
             </div>
+            <h6 class="mb-0 fw-semibold text-black">Bootstrap</h6>
           </div>
+        </div>
 
-          <!-- figma -->
-          <div id="skills" class="card border p-3 rounded-4 col-sm-3 col-md-3 col-lg-3 col-xl-2 col-4">
-            <div class="d-flex">
-              <h5>Figma</h5>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128">
+        <!-- figma -->
+        <div class="skill-card card border-0 rounded-4 p-4 col-5 col-sm-4 col-md-3 col-lg-2 shadow-sm">
+          <div class="d-flex flex-column align-items-center justify-content-center gap-3 h-100">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 128 128">
                 <path fill="#0acf83"
                   d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0" />
                 <path fill="#a259ff" d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0" />
@@ -109,25 +116,28 @@
                   d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5S76.6 43 88.5 43S110 52.6 110 64.5zm0 0" />
               </svg>
             </div>
+            <h6 class="mb-0 fw-semibold text-black">Figma</h6>
           </div>
+        </div>
 
-          <!-- laragon -->
-          <div id="skills" class="card border p-3 rounded-4 col-sm-3 col-md-3 col-lg-3 col-xl-2 col-4">
-            <div class="d-flex">
-              <h5>Laragon</h5>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <!-- laragon -->
+        <div class="skill-card card border-0 rounded-4 p-4 col-5 col-sm-4 col-md-3 col-lg-2 shadow-sm">
+          <div class="d-flex flex-column align-items-center justify-content-center gap-3 h-100">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
                 <path fill="#34ADFA"
                   d="M12.843.979c-2.12-.096-3.477 1.439-3.477 1.439C2.52 2.5.791 8.429.75 8.552l-.248.74c-2.268 8.78 3.889 12.22 3.889 12.22c.188.091.375-.066.375-.066c.5-.31.252-.53.252-.53c-1.43-1.742-1.595-5.864-1.596-5.899c-.64-.532-1.248-1.318-1.111-2.342c0 0 .084-.51.584-.197c0 0 1.186.644 2.123.83c-.001 0 .476.043.5.177c0 0 .374 1.752-.78 2.32c.745.437 1.465.85 1.465.85c.124 1.263.81 5.32.81 5.32c.064.797.906.954.906.954c.483.172 4.12.062 4.12.062c1.014-.044 1.062-.953 1.062-.953c.015-.545.03-3.62.03-3.62c.096-.575.766-.5.766-.5c.703-.03.688.454.688.454c-.017.515.045 3.496.045 3.496c.03.858.781 1.125.781 1.125c.488 0 .828-.004 1.365 0c.252.002 1.473 0 1.473 0c.55-.307 1.377-.969 1.377-.969c5.868-4.91 4.135-11.9 4.135-11.9C22.93 5.88 17.792 5.1 17.792 5.1c-.582-1.811-1.643-2.682-1.643-2.682c-1.222-1.015-2.343-1.396-3.306-1.44zM17.849 5.252s1.845 3.08-1.727 7.86c.001.001-2.94 4.116-8.232 1.223c1.084.523 5.536 2.312 8.375-1.98c0 0 2.632-3.437 1.584-7.103M6.703 8.868s1.296.036 1.341 1.82c0 0-1.02-2.668-3.271-.2c0 0 .404-1.729 1.93-1.62" />
               </svg>
-
             </div>
+            <h6 class="mb-0 fw-semibold text-black">Laragon</h6>
           </div>
+        </div>
 
-          <!-- XAMPP -->
-          <div id="skills" class="card border p-3 rounded-4 col-sm-3 col-md-3 col-lg-3 col-xl-2 col-4">
-            <div class="d-flex">
-              <h5>XAMPP</h5>
-              <svg xmlns="http://www.w3.org/2000/svg" width="23.82" height="24" viewBox="0 0 256 258">
+        <!-- XAMPP -->
+        <div class="skill-card card border-0 rounded-4 p-4 col-5 col-sm-4 col-md-3 col-lg-2 shadow-sm">
+          <div class="d-flex flex-column align-items-center justify-content-center gap-3 h-100">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 258">
                 <g fill="none" fill-rule="evenodd">
                   <path fill="#fb7a24"
                     d="M127.929.002Q177.77.002 227.61 0c4.17 0 8.3.362 12.301 1.582c8.675 2.644 13.268 8.865 15.068 17.438c.715 3.4.918 6.865.925 10.33c.053 23.27.092 46.542.094 69.814c.002 42.384.007 84.768-.08 127.151c-.012 5.933-.328 11.931-3.257 17.336c-3.249 5.994-7.697 10.738-14.45 12.824c-1.22.377-2.494.806-3.745.806c-2.882.002-5.687.716-8.56.716c-65.067-.005-130.133.033-195.2-.07c-5.292-.01-10.67-.395-15.697-2.548c-1-.43-2.01-.79-2.89-1.46c-6.4-4.877-10.746-10.96-11.678-19.191c-.335-2.968-.442-5.92-.442-8.889c.01-65.952.016-131.904.05-197.856c.003-3.826.042-7.718 1.219-11.38C4.403 6.846 11.261 1.519 21.427.437C23.79.185 26.173.022 28.547.02C61.672-.007 94.801.002 127.928.002" />
@@ -136,24 +146,28 @@
                 </g>
               </svg>
             </div>
+            <h6 class="mb-0 fw-semibold text-black">XAMPP</h6>
           </div>
+        </div>
 
-          <!-- Laravel -->
-          <div id="skills" class="card border p-3 rounded-4 col-sm-3 col-md-3 col-lg-3 col-xl-2 col-4">
-            <div class="d-flex">
-              <h5>Laravel</h5>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128">
+        <!-- Laravel -->
+        <div class="skill-card card border-0 rounded-4 p-4 col-5 col-sm-4 col-md-3 col-lg-2 shadow-sm">
+          <div class="d-flex flex-column align-items-center justify-content-center gap-3 h-100">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 128 128">
                 <path fill="#f0513f"
                   d="M27.271.11c-.2.078-5.82 3.28-12.487 7.112c-8.078 4.644-12.227 7.09-12.449 7.32c-.19.225-.34.482-.438.76c-.167.564-.179 82.985-.01 83.578c.061.23.26.568.44.754c.436.46 48.664 28.19 49.25 28.324c.272.065.577.054.88-.03c.658-.165 48.76-27.834 49.188-28.286c.175-.195.375-.532.44-.761c.084-.273.115-4.58.115-13.655v-13.26l11.726-6.735c11.056-6.357 11.733-6.755 12.017-7.191l.29-.47V43.287c0-15.548.03-14.673-.585-15.235c-.165-.146-5.798-3.433-12.53-7.31L100.89 13.71h-1.359l-11.963 6.87c-6.586 3.788-12.184 7.027-12.457 7.203c-.272.18-.597.512-.73.753l-.242.417l-.054 13.455l-.048 13.46l-9.879 5.69c-5.434 3.124-9.957 5.71-10.053 5.734c-.175.049-.187-1.232-.187-25.966V15.293l-.26-.447c-.326-.545 1.136.324-13.544-8.114C27.803-.348 28.098-.2 27.27.11zm11.317 10.307c5.15 2.955 9.364 5.4 9.364 5.43c0 .031-4.516 2.641-10.035 5.813l-10.041 5.765l-10.023-5.764c-5.507-3.173-10.02-5.783-10.02-5.814s4.505-2.64 10.013-5.805l9.999-5.752l.69.376q5.036 2.86 10.053 5.751m71.668 13.261c5.422 3.122 9.908 5.702 9.95 5.744c.114.103-19.774 11.535-20.046 11.523c-.272-.008-19.915-11.335-19.907-11.473c.01-.157 19.773-11.527 19.973-11.496c.091.022 4.607 2.59 10.03 5.702M16.3 25.328l9.558 5.503l.055 27.247l.05 27.252l.233.368c.122.194.352.459.52.581c.158.115 5.477 3.146 11.818 6.724l11.52 6.506v11.527c0 6.326-.043 11.516-.097 11.516c-.041 0-10-5.699-22.124-12.676L5.793 97.201l-.03-38.966l-.019-38.954l.49.271c.283.15 4.807 2.748 10.065 5.775zm33.754 19.18v25.109l-.387.253c-.525.332-19.667 11.335-19.732 11.335c-.03 0-.054-11.336-.054-25.193l.012-25.182l10-5.752c5.499-3.165 10.034-5.733 10.088-5.714c.039.024.073 11.34.073 25.144m38.15-5.775l10.023 5.763V55.92c0 10.838-.011 11.42-.176 11.357c-.107-.041-4.642-2.64-10.083-5.774l-9.91-5.69v-11.42c0-6.287.032-11.424.062-11.424c.043 0 4.577 2.592 10.084 5.764m34.164 5.587c0 6.254-.042 11.412-.084 11.462c-.072.115-19.896 11.538-20.022 11.538c-.031 0-.062-5.135-.062-11.423v-11.42l10-5.756c5.507-3.16 10.042-5.752 10.084-5.752c.053 0 .084 5.105.084 11.351M95.993 70.933L52.005 96.04L32.056 84.693S76 59.277 76.176 59.343zm2.215 14.827l-.034 11.442l-22.028 12.676c-12.12 6.976-22.082 12.675-22.132 12.675c-.053 0-.095-4.658-.095-11.516V99.51l22.08-12.592c12.132-6.923 22.101-12.59 22.154-12.602c.043 0 .062 5.148.054 11.443z" />
               </svg>
             </div>
+            <h6 class="mb-0 fw-semibold text-black">Laravel</h6>
           </div>
+        </div>
 
-          <!-- Php -->
-          <div id="skills" class="card border p-3 rounded-4 col-sm-3 col-md-3 col-lg-3 col-xl-2 col-4">
-            <div class="d-flex">
-              <h5>Php</h5>
-              <svg xmlns="http://www.w3.org/2000/svg" width="45.52" height="24" viewBox="0 0 256 135">
+        <!-- Php -->
+        <div class="skill-card card border-0 rounded-4 p-4 col-5 col-sm-4 col-md-3 col-lg-2 shadow-sm">
+          <div class="d-flex flex-column align-items-center justify-content-center gap-3 h-100">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 135">
                 <defs>
                   <radialGradient id="logosPhp0" cx=".837" cy="-125.811" r="363.057"
                     gradientTransform="translate(76.464 81.918)scale(.463)" gradientUnits="userSpaceOnUse">
@@ -170,29 +184,80 @@
                   d="M74.8 48.2c5.6 0 9.3 1 11.2 3.1s2.3 5.6 1.3 10.6c-1 5.2-3 9-5.9 11.2q-4.35 3.3-13.2 3.3h-8.9l5.5-28.2zM39 105h14.7l3.5-17.9h12.6c5.6 0 10.1-.6 13.7-1.8s6.8-3.1 9.8-5.9q3.75-3.45 6-7.5c1.5-2.7 2.6-5.7 3.2-9c1.6-8 .4-14.2-3.5-18.7s-10.1-6.7-18.6-6.7H52.1zm74.3-85.4h14.6l-3.5 17.9h13c8.2 0 13.8 1.4 16.9 4.3s4 7.5 2.8 13.9L151 87.1h-14.8l5.8-29.9c.7-3.4.4-5.7-.7-6.9s-3.6-1.9-7.3-1.9h-11.7l-7.5 38.7h-14.6zm76.2 28.6c5.6 0 9.3 1 11.2 3.1s2.3 5.6 1.3 10.6c-1 5.2-3 9-5.9 11.2q-4.35 3.3-13.2 3.3H174l5.5-28.2zM153.7 105h14.7l3.5-17.9h12.6c5.6 0 10.1-.6 13.7-1.8s6.8-3.1 9.8-5.9q3.75-3.45 6-7.5c1.5-2.7 2.6-5.7 3.2-9c1.6-8 .4-14.2-3.5-18.7s-10.1-6.7-18.6-6.7h-28.3z" />
               </svg>
             </div>
+            <h6 class="mb-0 fw-semibold text-black">Php</h6>
           </div>
+        </div>
 
-          <!-- Tailwind Css -->
-          <div id="skills" class="card border p-3 rounded-4 col-sm-3 col-md-3 col-lg-3 col-xl-2 col-4">
-            <div class="d-flex">
-              <h6>TailwindCSS</h6>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128">
+        <!-- Tailwind Css -->
+        <div class="skill-card card border-0 rounded-4 p-4 col-5 col-sm-4 col-md-3 col-lg-2 shadow-sm">
+          <div class="d-flex flex-column align-items-center justify-content-center gap-3 h-100">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 128 128">
                 <path fill="#38bdf8"
                   d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597c6.398-8.531 13.867-11.73 22.398-9.597c4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602q-9.6 12.803-22.399 9.602c-4.87-1.215-8.347-4.746-12.207-8.66c-6.27-6.367-13.53-13.738-29.394-13.738M32.004 64c-17.066 0-27.73 8.531-32 25.602Q9.603 76.799 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66c6.274 6.367 13.536 13.738 29.395 13.738c17.066 0 27.73-8.53 32-25.597q-9.6 12.797-22.399 9.597c-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64m0 0" />
               </svg>
             </div>
+            <h6 class="mb-0 fw-semibold text-black">TailwindCSS</h6>
           </div>
+        </div>
 
-          <!-- Vue Js -->
-          <div id="skills" class="card border p-3 rounded-4 col-sm-3 col-md-3 col-lg-3 col-xl-2 col-4">
-            <div class="d-flex">
-              <h5>VueJs</h5>
-              <svg xmlns="http://www.w3.org/2000/svg" width="27.81" height="24" viewBox="0 0 256 221">
+        <!-- Vue Js -->
+        <div class="skill-card card border-0 rounded-4 p-4 col-5 col-sm-4 col-md-3 col-lg-2 shadow-sm">
+          <div class="d-flex flex-column align-items-center justify-content-center gap-3 h-100">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 221">
                 <path fill="#41b883" d="M204.8 0H256L128 220.8L0 0h97.92L128 51.2L157.44 0z" />
                 <path fill="#41b883" d="m0 0l128 220.8L256 0h-51.2L128 132.48L50.56 0z" />
                 <path fill="#35495e" d="M50.56 0L128 133.12L204.8 0h-47.36L128 51.2L97.92 0z" />
               </svg>
             </div>
+            <h6 class="mb-0 fw-semibold text-black">VueJs</h6>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="experience py-5" data-bs-spy="scroll" data-bs-target="navbarSticky">
+    <div class="container py-5">
+      <div class="text-center mb-5">
+        <span class="badge text-bg-primary p-2 px-3 mb-2 rounded-pill shadow-sm">My Journey</span>
+        <h2 class="display-5 fw-bold text-capitalize">Work Experience</h2>
+      </div>
+      <div class="timeline">
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">1 Dec 2025 - 28 Feb 2026</span>
+            <h4 class="timeline-title">UI/UX Designer Intern</h4>
+            <span class="timeline-company">Portal Studios</span>
+            <p class="text-muted mb-0">Designed and published weekly UI/UX concepts for the company’s Dribbble account
+              using Figma, while delivering one UI/UX design each week based on assigned themes and project briefs.</p>
+          </div>
+        </div>
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">14 April - 2 July 2025</span>
+            <h4 class="timeline-title">Landing Page Builder Intern</h4>
+            <span class="timeline-company">PT. agro mulia Internasional</span>
+            <p class="text-muted mb-0">Designed user interface (UI) layouts using Figma and directly implemented them in
+              WordPress, consistently delivering one complete UI design and its WordPress implementation each week
+              according to project requirements.</p>
+          </div>
+        </div>
+        <!-- Experience 3 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">4 Feb - 4 Mar 2024</span>
+            <h4 class="timeline-title">Project-Based Virtual Intern: Frontend Developer</h4>
+            <span class="timeline-company">Core Initiative x Rakamin Academy</span>
+            <p class="text-muted mb-0">Successfully completed all assignments and training materials over a 4-week
+              program covering JavaScript, Vue.js, unit testing with Jest, and application deployment, while developing
+              an e-commerce clothing catalog website based on provided designs and integrating APIs to display product
+              data.</p>
           </div>
         </div>
       </div>
@@ -200,140 +265,224 @@
   </section>
 
   <!-- projects -->
-  <section id="projects" class="projects pt-5" data-bs-spy="scroll" data-bs-target="navbarSticky"
+  <section id="projects" class="projects" data-bs-spy="scroll" data-bs-target="navbarSticky"
     data-bs-smooth-scroll="true">
-    <div>
+    <div class="projects-overlay">
       <div class="container">
-        <h2 class="text-center text-capitalize">personal projects</h2>
-        <div class="project gap-5 mt-5  d-sm-flex justify-content-around">
-          <!-- project 1 -->
-          <div class="card border p-3">
-            <video autoplay muted loop>
-              <source src="assets/project/desain_ecommerce_headphone_revisi.mp4" type="video/mp4">
-            </video>
-            <p class="grid place">I designed an e-commerce landing page for headphone products using the Figma
-              application.
-              <span>
-                <p>Tools</p>
-                <ul>
-                  <li>Figma</li>
-                </ul>
-              </span>
-            </p>
-            <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#videoModal"
-              data-bs-video="assets/project/desain_ecommerce_headphone_revisi.mp4">
-              Perbesar Video
-            </button>
-          </div>
-
-          <div class="card border p-3">
-            <video autoplay muted loop>
-              <source src="assets/project/desain_kasPro.mp4" type="video/mp4">
-            </video>
-            <p>I designed the KasPro application, an innovative solution for personal finance management, as part of my
-              final project.
-              <span>
-                <p>Tools</p>
-                <ul>
-                  <li>Figma</li>
-                </ul>
-              </span>
-            </p>
-            <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#videoModal"
-              data-bs-video="assets/project/desain_kasPro.mp4">
-              Perbesar Video
-            </button>
-          </div>
-
-          <div class="card border p-3">
-            <video autoplay muted loop>
-              <source src="assets/project/CRUD Laravel 11.mp4" type="video/mp4">
-            </video>
-            <p>It is my personal project CRUD (Create, Update & Delete) and Searching
-              <span>
-                <p>Tools</p>
-                <ul>
-                  <li>Boostrap</li>
-                  <li>Laravel</li>
-                  <li>Laragon</li>
-                </ul>
-              </span>
-            </p>
-            <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#videoModal"
-              data-bs-video="assets/project/CRUD Laravel 11.mp4">
-              Perbesar Video
-            </button>
-          </div>
+        <!-- Section Header -->
+        <div class="text-center mb-5 projects-header">
+          <span class="badge text-bg-light p-2 px-3 mb-3 rounded-pill shadow-sm"
+            style="color:#0d6efd!important;background:rgba(13,110,253,0.12)!important;">My Work</span>
+          <h2 class="display-5 fw-bold text-white">Personal Projects</h2>
+          <p class="text-white-50 mx-auto" style="max-width:520px;">A collection of projects that reflect my passion for
+            crafting clean, intuitive, and impactful digital experiences.</p>
         </div>
-        <div class="project gap-5 mt-5  d-sm-flex justify-content-around">
-          <div class="card border p-3">
-            <video autoplay muted loop>
-              <source src="assets/project/ecommerce-catalog-vueJS.mp4" type="video/mp4">
-            </video>
-            <p class="grid place">E-commerce catalog with API to access products. This project I made for my first virtual internship.
-              <span>
-                <p>Tools</p>
-                <ul>
-                  <li>VueJs</li>
-                  <li>API</li>
-                </ul>
-              </span>
-            </p>
-            <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#videoModal"
-              data-bs-video="assets/project/ecommerce-catalog-vueJS.mp4">
-              Perbesar Video
-            </button>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#videoModal"
+            data-bs-video="assets/project/desain_ecommerce_headphone_revisi.mp4" data-title="E-Commerce Headphone UI">
+            <div class="project-card-video">
+              <video autoplay muted loop playsinline>
+                <source src="assets/project/desain_ecommerce_headphone_revisi.mp4" type="video/mp4">
+              </video>
+              <div class="project-card-overlay">
+                <div class="play-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16">
+                    <path
+                      d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                  </svg>
+                </div>
+                <span class="view-label">Watch Preview</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="d-flex align-items-start justify-content-between mb-2">
+                <h5 class="project-title">E-Commerce Headphone UI</h5>
+                <span class="project-type-badge">UI/UX</span>
+              </div>
+              <p class="project-desc">Designed an e-commerce landing page for headphone products — clean, modern, and
+                conversion-focused.</p>
+              <div class="project-tags">
+                <span class="tag">Figma</span>
+              </div>
+            </div>
           </div>
-          <div class="card border p-3">
-            <video autoplay muted loop>
-              <source src="assets/project/web_desain_plant.mp4" type="video/mp4">
-            </video>
-            <p>This interface web 
-              <span>
-                <p>Tools</p>
-                <ul>
-                  <li>TailwindCSS</li>
-                </ul>
-              </span>
-            </p>
-            <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#videoModal"
-              data-bs-video="assets/project/web_desain_plant.mp4">
-              Perbesar Video
-            </button>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#videoModal"
+            data-bs-video="assets/project/desain_kasPro.mp4" data-title="KasPro - Finance App UI">
+            <div class="project-card-video">
+              <video autoplay muted loop playsinline>
+                <source src="assets/project/desain_kasPro.mp4" type="video/mp4">
+              </video>
+              <div class="project-card-overlay">
+                <div class="play-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16">
+                    <path
+                      d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                  </svg>
+                </div>
+                <span class="view-label">Watch Preview</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="d-flex align-items-start justify-content-between mb-2">
+                <h5 class="project-title">KasPro — Finance App UI</h5>
+                <span class="project-type-badge">UI/UX</span>
+              </div>
+              <p class="project-desc">Designed KasPro, an innovative personal finance management app, as a final project
+                showcasing mobile-first design thinking.</p>
+              <div class="project-tags">
+                <span class="tag">Figma</span>
+              </div>
+            </div>
           </div>
-          <div class="card border p-3">
-            <video autoplay muted loop>
-              <source src="assets/project/web_kopi_organic.mp4" type="video/mp4">
-            </video>
-            <p>I created the 'Organic Coffee' website, a responsive e-commerce platform. I did this because I'm part of the competition web.
-              <span>
-                <p>Tools</p>
-                <ul>
-                  <li>Css</li>
-                  <li>JavaScript</li>
-                </ul>
-              </span>
-            </p>
-            <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#videoModal"
-              data-bs-video="assets/project/web_kopi_organic.mp4">
-              Perbesar Video
-            </button>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#videoModal"
+            data-bs-video="assets/project/CRUD Laravel 11.mp4" data-title="CRUD App - Laravel 11">
+            <div class="project-card-video">
+              <video autoplay muted loop playsinline>
+                <source src="assets/project/CRUD Laravel 11.mp4" type="video/mp4">
+              </video>
+              <div class="project-card-overlay">
+                <div class="play-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16">
+                    <path
+                      d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                  </svg>
+                </div>
+                <span class="view-label">Watch Preview</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="d-flex align-items-start justify-content-between mb-2">
+                <h5 class="project-title">CRUD App — Laravel 11</h5>
+                <span class="project-type-badge"
+                  style="background:rgba(240,81,63,0.15);color:#f0513f;">Full-Stack</span>
+              </div>
+              <p class="project-desc">A full-featured CRUD application with Create, Read, Update, Delete & Search built
+                on Laravel 11.</p>
+              <div class="project-tags">
+                <span class="tag">Bootstrap</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">Laragon</span>
+              </div>
+            </div>
           </div>
+
+          <!-- Project 4 -->
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#videoModal"
+            data-bs-video="assets/project/ecommerce-catalog-vueJS.mp4" data-title="E-Commerce Catalog - VueJS">
+            <div class="project-card-video">
+              <video autoplay muted loop playsinline>
+                <source src="assets/project/ecommerce-catalog-vueJS.mp4" type="video/mp4">
+              </video>
+              <div class="project-card-overlay">
+                <div class="play-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16">
+                    <path
+                      d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                  </svg>
+                </div>
+                <span class="view-label">Watch Preview</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="d-flex align-items-start justify-content-between mb-2">
+                <h5 class="project-title">E-Commerce Catalog — VueJS</h5>
+                <span class="project-type-badge" style="background:rgba(65,184,131,0.15);color:#41b883;">Frontend</span>
+              </div>
+              <p class="project-desc">E-commerce product catalog with live API integration — built during my first
+                virtual internship program.</p>
+              <div class="project-tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">REST API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#videoModal"
+            data-bs-video="assets/project/web_desain_plant.mp4" data-title="Plant Store Web UI">
+            <div class="project-card-video">
+              <video autoplay muted loop playsinline>
+                <source src="assets/project/web_desain_plant.mp4" type="video/mp4">
+              </video>
+              <div class="project-card-overlay">
+                <div class="play-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16">
+                    <path
+                      d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                  </svg>
+                </div>
+                <span class="view-label">Watch Preview</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="d-flex align-items-start justify-content-between mb-2">
+                <h5 class="project-title">Plant Store Web UI</h5>
+                <span class="project-type-badge" style="background:rgba(56,189,248,0.15);color:#38bdf8;">Frontend</span>
+              </div>
+              <p class="project-desc">A fresh and modern plant store interface featuring a clean layout and vibrant
+                green aesthetic.</p>
+              <div class="project-tags">
+                <span class="tag">TailwindCSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#videoModal"
+            data-bs-video="assets/project/web_kopi_organic.mp4" data-title="Organic Coffee Website">
+            <div class="project-card-video">
+              <video autoplay muted loop playsinline>
+                <source src="assets/project/web_kopi_organic.mp4" type="video/mp4">
+              </video>
+              <div class="project-card-overlay">
+                <div class="play-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16">
+                    <path
+                      d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                  </svg>
+                </div>
+                <span class="view-label">Watch Preview</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="d-flex align-items-start justify-content-between mb-2">
+                <h5 class="project-title">Organic Coffee Website</h5>
+                <span class="project-type-badge"
+                  style="background:rgba(253,186,116,0.15);color:#f59e0b;">Competition</span>
+              </div>
+              <p class="project-desc">A responsive e-commerce platform for 'Organic Coffee', built for a web competition
+                with a focus on performance.</p>
+              <div class="project-tags">
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Modal -->
+  <!-- Video Modal -->
   <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoModalLabel">Tonton Video</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content project-modal-content">
+        <div class="modal-header project-modal-header border-0">
+          <h5 class="modal-title text-white fw-bold" id="videoModalLabel">Project Preview</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <video id="modalVideo" class="w-100" controls autoplay>
+        <div class="modal-body p-0">
+          <video id="modalVideo" class="w-100" controls autoplay
+            style="border-radius:0 0 16px 16px;max-height:75vh;background:#000;">
             <source id="modalVideoSource" src="" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -344,16 +493,35 @@
 
   <!-- footer -->
   <footer class="footer">
-    <div class="container container-footer d-grid">
-      <div class="nav nav-footer d-flex justify-content-center align-items-center gap-4 text-black">
-        <a href="https://ade-sulastri.github.io/" class="text-decoration-none text-black">Github</a>
-        <a href="www.linkedin.com/in/adesulastri"
-          class="text-decoration-none text-black">Linkedin</a>
+    <div class="footer-container">
+
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3 class="brand-name"><span class="brand-dot"></span> Ade Sulastri</h3>
+          <p class="brand-desc">Crafting clean, purposeful digital experiences — one project at a time.</p>
+        </div>
+
+        <div class="footer-links">
+          <p class="footer-links-label">Connect</p>
+          <div class="links-wrapper">
+            <a href="https://ade-sulastri.github.io/" class="footer-link" target="_blank" rel="noopener noreferrer">
+              <i class="ti ti-brand-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/adesulastri" class="footer-link" target="_blank"
+              rel="noopener noreferrer">
+              <i class="ti ti-brand-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
       </div>
 
-      <div class="text d-grid justify-content-center align-items-end">
-        <p>Create by AdeSulastri</p>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 AdeSulastri. All rights reserved.</p>
+        <div class="footer-badge">
+          <span class="status-dot"></span> Open to opportunities
+        </div>
       </div>
+
     </div>
   </footer>
 
@@ -367,6 +535,10 @@
       const button = event.relatedTarget;
       // Ambil URL video dari data-bs-video
       const videoSrc = button.getAttribute('data-bs-video');
+      // Ambil judul proyek dari data-title
+      const videoTitle = button.getAttribute('data-title') || 'Project Preview';
+      // Setel judul modal
+      document.getElementById('videoModalLabel').textContent = videoTitle;
       // Setel src video di modal dengan URL baru
       const modalVideoSource = document.getElementById('modalVideoSource');
       modalVideoSource.src = videoSrc;
@@ -383,7 +555,28 @@
       modalVideo.currentTime = 0;
     });
   </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Setup IntersectionObserver for timeline items
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            // Optional: stop observing once it has animated
+            // observer.unobserve(entry.target); 
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+      });
 
+      const timelineItems = document.querySelectorAll('.timeline-item');
+      timelineItems.forEach(item => {
+        observer.observe(item);
+      });
+    });
+  </script>
 </body>
 
 </html>
